@@ -1,6 +1,8 @@
+import { Features } from "@/components/features";
 import { Hero } from "@/components/hero";
 import Container from "@/components/layout/container";
 import { Navbar } from "@/components/navbar";
+import { Resources } from "@/components/resources";
 
 export const Home: React.FC = () => {
   return (
@@ -11,12 +13,11 @@ export const Home: React.FC = () => {
         </Container>
       </header>
 
-      <main className="flex-1">
+      <main className="flex-1 w-full">
         <Container>
-          <div className="">
             <Hero></Hero>
-          </div>
         </Container>
+        <Features></Features>
       </main>
 
       <footer className="border-t">

@@ -1,4 +1,3 @@
-import { FolderCard } from "./foldercard";
 import { Button } from "./ui/button";
 
 export const Hero = () => {
