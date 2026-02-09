@@ -1,8 +1,10 @@
 import { Features } from "@/components/features";
 import { Hero } from "@/components/hero";
+import { Integration } from "@/components/integration";
 import Container from "@/components/layout/container";
 import { Navbar } from "@/components/navbar";
 import { Resources } from "@/components/resources";
+import Testimonial from "@/components/testimonial";
 
 export const Home: React.FC = () => {
   return (
@@ -18,6 +20,7 @@ export const Home: React.FC = () => {
             <Hero></Hero>
         </Container>
         <Features></Features>
+        <Testimonial></Testimonial>
       </main>
 
       <footer className="border-t">
