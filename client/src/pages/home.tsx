@@ -1,15 +1,16 @@
-import { Features } from "@/components/features";
-import { Hero } from "@/components/hero";
-import { Integration } from "@/components/integration";
 import Container from "@/components/layout/container";
-import { Navbar } from "@/components/navbar";
-import { Resources } from "@/components/resources";
-import Testimonial from "@/components/testimonial";
+import Hero from "@/features/home/components/hero";
+import Video from "@/features/home/components/video";
+import { Navbar } from "@/features/home/components/navbar";
+import Work from "@/features/home/components/work";
+import WorkGrid from "@/features/home/components/workGrid";
+import Projects from "@/features/home/components/projects";
+import Footer from "@/features/home/components/footer";
 
 export const Home: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="border-b">
+      <header className="">
         <Container>
           <Navbar />
         </Container>
@@ -17,15 +18,21 @@ export const Home: React.FC = () => {
 
       <main className="flex-1 w-full">
         <Container>
-            <Hero></Hero>
+          <Hero></Hero>
         </Container>
-        <Features></Features>
-        <Testimonial></Testimonial>
+        <Video></Video>
+        <Work></Work>
+        <WorkGrid></WorkGrid>
+        <Projects></Projects>
       </main>
 
-      <footer className="border-t">
+      <footer className="">
         <Container>
-          <div className="py-8"></div>
+          <footer>
+            <Container>
+              <Footer />
+            </Container>
+          </footer>{" "}
         </Container>
       </footer>
     </div>

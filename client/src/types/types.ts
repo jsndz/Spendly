@@ -4,7 +4,7 @@ export type Item = {
 
 export type User = {
   name: string;
-  email: string
+  email: string;
 } 
 
 export const items: Item[] = [
