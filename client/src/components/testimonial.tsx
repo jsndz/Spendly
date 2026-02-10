@@ -1,4 +1,4 @@
-import { testimonials } from '@/lib/const';
+import { testimonials } from '@/types/types';
 import Container from './layout/container';
 import { AnimatedTestimonials } from './ui/animated-testimonials';
 import { Badge } from './ui/badge';

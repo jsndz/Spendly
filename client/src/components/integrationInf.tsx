@@ -1,6 +1,6 @@
 import React from 'react'
 import { InfiniteMovingCards } from './ui/infinite-moving-cards';
-import { items } from '@/lib/const';
+import { items } from '@/types/types';
 
 const IntegrationInf = () => {
   return (

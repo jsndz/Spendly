@@ -1,6 +1,11 @@
-type Item = {
+export type Item = {
   url: string;
 };
+
+export type User = {
+  name: string;
+  email: string
+} 
 
 export const items: Item[] = [
   { url: "/piggy.svg" },
