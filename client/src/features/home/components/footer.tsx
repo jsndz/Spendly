@@ -17,9 +17,9 @@ const Footer = () => {
         </Button>
       </div>
 
-      <div className="flex justify-between items-end ">
+      <div className="flex justify-between items-end font-ui font-light uppercase tracking-[0.35em] text-xs ">
         <div className="flex  justify-between pt-4 ">
-          <div className="pr-5 ">
+          <div className="pr-5  ">
             <p>[Home]</p>
             <p>WHAT WE DO</p>
             <p>WORK</p>

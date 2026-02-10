@@ -8,7 +8,7 @@ const WorkGrid = () => {
     <Container>
       <div className="grid grid-cols-4 grid-rows-[repeat(16,1fr)] gap-2 mb-16">
         <div className="col-span-2 row-span-4 border border-black rounded-3xl flex items-center justify-center">
-          <img src="dollar.png" className="w-[70%]" />
+          <img src="feature.jpg" className="w-[70%] aspect-video object-cover rounded-lg" />
         </div>
 
         <div className="col-span-2 row-span-4 col-start-3 flex flex-col items-baseline justify-center text-base pr-10 ">
@@ -38,11 +38,11 @@ const WorkGrid = () => {
         </div>
 
         <div className="col-span-2 row-span-4 col-start-3 row-start-7 flex items-baseline justify-center">
-          <img src="dollar.png" className="w-[70%]" />
+          <img src="feature2.jpg" className="w-[70%] aspect-video object-cover rounded-lg" alt="Feature" />
         </div>
 
         <div className="col-span-2 row-span-4 row-start-13 flex items-center justify-center">
-          <img src="dollar.png" className="w-[70%]" />
+          <img src="feature3.jpg" className="w-[70%] aspect-video object-cover rounded-lg" alt="Feature" />
         </div>
 
         <div className="col-span-2 row-span-4 col-start-3 row-start-13 flex flex-col items-baseline justify-center pr-10 text-base">

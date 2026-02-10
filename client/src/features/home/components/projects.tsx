@@ -15,7 +15,9 @@ const Projects = () => {
 
       <div className="flex justify-between">
         <div className="w-[50%] ">
-        <div className="flex justify-center"><img src="dollar.png" className="w-[70%]  pb-5"  /></div>
+          <div className="flex justify-center">
+            <img src="work1.jpg" className="w-[70%] aspect-square object-cover pb-5" alt="Analysis" />
+          </div>
 
           <p className="font-bold font-mono text-3xl">Analyis</p>
           <p>
@@ -26,7 +28,9 @@ const Projects = () => {
           </p>
         </div>
         <div className="w-[50%]">
-        <div className="flex justify-center"><img src="dollar.png" className="w-[70%] pb-5"  /></div>
+          <div className="flex justify-center">
+            <img src="work2.jpg" className="w-[70%] aspect-square object-cover pb-5" alt="Records" />
+          </div>
           <p className="font-bold font-mono text-3xl ">Records</p>
           <p className="">
             With accurate records at your fingertips, you can track trends over
