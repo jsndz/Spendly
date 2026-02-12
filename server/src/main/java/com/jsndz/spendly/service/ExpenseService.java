@@ -60,7 +60,7 @@ public class ExpenseService {
         expense.setDescription(request.getDescription());
         expense.setCategory(request.getCategory());
         expense.setExpenseDate(request.getExpenseDate());
-        if (!expense.getUser().GetId().equals(request.getUserId())) {
+        if (!expense.getUser().getId().equals(request.getUserId())) {
             User user = userRepository.findById(request.getUserId())
                     .orElseThrow(() -> new RuntimeException("User not found with id: " + request.getUserId()));
             expense.setUser(user);

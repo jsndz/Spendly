@@ -1,5 +1,6 @@
 package com.jsndz.spendly.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
@@ -13,35 +14,46 @@ public class User {
     public Long id;
 
     @Column(nullable = false)
-    public String Name;
+    public String name;
 
     @Column(nullable = false,unique = true)
     @Email
-    public String Email;
+    public String email;
+
+    @JsonIgnore
+    @Column(nullable = false)
+    public String password;
+
 
     public User() {}
 
     public User(String name ,String email  ){
-        this.Name = name;
-        this.Email = email;
+        this.name = name;
+        this.email = email;
     }
 
     //getter and setter
 
-    public String  GetName(){
-        return this.Name;
+    public String  getName(){
+        return this.name;
     }
-    public void   SetName(String name ){
-         this.Name=name;
+    public void   setName(String name ){
+         this.name=name;
     }
-    public String  GetEmail(){
-        return this.Email;
+    public String  getEmail(){
+        return this.email;
     }
-    public void   SetEmail(String email ){
-        this.Email=email;
+    public void   setEmail(String email ){
+        this.email=email;
     }
-    public Long  GetId(){
+    public Long  getId(){
         return this.id;
+    }
+    public String getPassword(){
+        return this.password;
+    }
+    public void setPassword(String password ){
+        this.password=password;
     }
 
 
