@@ -9,11 +9,13 @@ import {
 } from "@tabler/icons-react";
 import React, { useState } from "react";
 import { useLogin, useSignup } from "../hook";
+import { useNavigate } from "react-router-dom";
 
 const Authform = () => {
   const [page, setPage] = useState<"login" | "signup">("login");
   const loginMutation = useLogin();
   const signupMutation = useSignup();
+  const navigator = useNavigate();
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -38,15 +40,13 @@ const Authform = () => {
   return (
     <div className="flex h-screen items-center justify-center bg-background p-10 text-foreground">
       {/* Left image */}
-      <div className="relative w-1/2">
+      <div className="w-[50%] h-full  flex flex-col justify-center items-center">
         <img
           src="auth.jpg"
           alt="Flowers"
-          className="h-full w-[90%] rounded-4xl border border-border object-cover"
+          className="h-[90%] w-auto object-contain"
         />
-        <p className="absolute top-8 left-1/2 -translate-x-1/2 text-2xl font-semibold text-foreground drop-shadow-lg">
-          Be part of something beautiful
-        </p>
+        <p className="absolute top-20">Be part of something beautiful</p>
       </div>
 
       {/* Right form */}
@@ -82,7 +82,7 @@ const Authform = () => {
           {page === "signup" && (
             <LabelInputContainer>
               <Label>Username</Label>
-              <Input placeholder="Drax" type="text"  name="username"/>
+              <Input placeholder="Drax" type="text" name="username" />
             </LabelInputContainer>
           )}
 
@@ -96,7 +96,7 @@ const Authform = () => {
             <Input placeholder="*********" type="password" name="password" />
           </LabelInputContainer>
 
-          <Button className="mt-4 w-fit">
+          <Button className="mt-4 w-fit" >
             {page === "login" ? "Login" : "Signup"}
             <IconArrowRight className="" />
           </Button>
