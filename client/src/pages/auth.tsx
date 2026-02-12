@@ -1,9 +1,9 @@
-import SignupForm from '@/components/signup-form'
-import React from 'react'
+import Authform from '@/features/auth/components/authform';
+
 
 const Auth = () => {
   return (
-    <div className="p-3"><SignupForm></SignupForm></div>
+    <div className="min-h-screen w-full"><Authform></Authform></div>
   )
 }
 

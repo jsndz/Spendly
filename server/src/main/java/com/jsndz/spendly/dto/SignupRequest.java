@@ -5,13 +5,14 @@ import jakarta.validation.constraints.NotNull;
 public class SignupRequest {
 
     @NotNull(message = "Email is required")
-    public String email;
+    private String email;
 
     @NotNull(message = "username is needed")
-    public String name;
+    private String name;
 
     @NotNull(message = "Password is required")
-    public String password;
+    private String password;
+
     public SignupRequest() {}
 
     public SignupRequest(String email, String password, String name) {
@@ -30,10 +31,9 @@ public class SignupRequest {
     public String  getName(){
         return this.name;
     }
-    public void   setName(String email ){
-        this.name=name;
+    public void setName(String name) {
+        this.name = name;
     }
-
     public String getPassword(){
         return this.password;
     }

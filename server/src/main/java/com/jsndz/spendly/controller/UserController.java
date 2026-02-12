@@ -22,10 +22,10 @@ public class UserController {
     public String Ping(){
         return "hello";
     }
-    @PostMapping("/signup")
 
+    @PostMapping("/signup")
     public ResponseEntity<AuthResponse> signup(
-            @Valid @ RequestBody SignupRequest req
+            @Valid @RequestBody SignupRequest req
             ){
         AuthResponse res = authService.signup(req.getEmail(),req.getPassword(),req.getName());
         return ResponseEntity.ok(res);
